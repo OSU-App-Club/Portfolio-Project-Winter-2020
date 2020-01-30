@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.accomplishments-list {
+    color: red;
+}
+
+.projects-list {
+    color: blue;
+}
+
+.projects {
+    background-color: magenta;
+    border: 2px solid black;
+}
+
+.content {
+    margin: 0 10%
+}
+
+.header {
+    position: sticky;
+    background-color: black;
+    top: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.header-image {
+    font-size: 2em;
+    color: white;
+}
+
+.header-title {
+    color: white;
+}
