@@ -25,15 +25,20 @@ function test(thingToTest) {
     return "done"
 }
 
-let count = 0;
+let count = localStorage.getItem("count");
+if (count == null) {
+    count = 0;
+    localStorage.setItem("count", count.toString());
+}
+let countText = "I've been clicked " + count + " times!";
+document.getElementById("count").innerHTML = countText;
+
 
 function buttonClicked(el) {
     count++;
+    localStorage.setItem("count", count.toString());
     let countText = "I've been clicked " + count + " times!";
     el.innerHTML = countText;
-    if (count == 1) {
-        el.classList.add("buttonClicked");
-    }
 }
 
 function disappearDiv() {

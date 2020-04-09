@@ -5,6 +5,19 @@ body {
 
 .accomplishments-list {
     color: red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#web-dev-item {
+    flex: 3 1 auto;
+}
+
+.accomplishments-list-items {
+    flex: 1 1 auto;
 }
 
 .projects-list {
@@ -15,10 +28,13 @@ body {
     background-color: magenta;
     border: 2px solid black;
     border-radius: 10px;
+    transition: 0.5s;
+    transition-property: background-color border-radius;
 }
 
 .projects:hover {
     background-color: yellow;
+    border-radius: 100px;
 }
 
 .buttonClicked {
